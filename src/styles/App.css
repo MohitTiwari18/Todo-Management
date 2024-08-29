@@ -1,0 +1,248 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+nav {
+  margin: 20px;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Todo List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Add Todo Form Styling */
+form {
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+/* Additional Styling for Todo Item Actions */
+.todo-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.todo-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-actions button:hover {
+  background-color: #0056b3;
+}
+
+.edit-form {
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-form button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.edit-form button:hover {
+  background-color: #45a049;
+}
+
+.edit-form button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.edit-form button:nth-child(2):hover {
+  background-color: #c82333;
+}
+/* Additional Styling for Search and Sort */
+.search-sort {
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-sort input,
+.search-sort select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1; /* Allow input and select to grow equally */
+}
+
+.search-sort input {
+  flex: 2; /* Input takes up more space */
+}
+
+.search-sort select {
+  flex: 1; /* Select takes up less space */
+  margin-top: -12px;
+}
+
+/* Ensure consistent form styling */
+.edit-form {
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-form button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.edit-form button:hover {
+  background-color: #45a049;
+}
+
+.edit-form button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.edit-form button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  nav {
+    margin: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  form {
+    width: 90%;
+  }
+}

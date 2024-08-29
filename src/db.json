@@ -1,0 +1,19 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "description": "A novel set in the 1920s.",
+        "image": "https://example.com/image1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A novel about racial injustice.",
+        "image": "https://example.com/image2.jpg"
+      }
+    ]
+  }
+  
